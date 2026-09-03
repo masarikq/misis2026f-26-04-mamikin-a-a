@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/mac/Desktop/cpp_vuz/main'
+relocations:     []
+...
