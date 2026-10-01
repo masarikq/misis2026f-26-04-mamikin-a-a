@@ -1,11 +1,16 @@
-cmake_minimum_required(VERSION 3.10)
-project(MisisTask)
+cmake_minimum_required(VERSION 3.20)
 
-# Задания первой недели
-add_executable(w1_1 0004a.cpp)
-add_executable(w1_2 0271a.cpp)
-add_executable(w1_3 0617a.cpp)
+project(misis2026f-cpp)
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "cmake")
 
-# Задания второй недели
-add_executable(w2_1 0263a.cpp)
-add_executable(w2_2 0978a.cpp)
+set(CMAKE_CXX_STANDARD 20)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_SOURCE_DIR}/bin.dbg)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR}/bin.rel)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO ${CMAKE_CURRENT_SOURCE_DIR}/bin.relwithdbg)
+
+include_directories(prj.thirdparty)
+
+add_subdirectory(prj.codeforces)
