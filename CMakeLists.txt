@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.20)
-
-project(misis2026f-cpp)
+cmake_minimum_required(VERSION 3.10)
+project(MisisTask)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "cmake")
 

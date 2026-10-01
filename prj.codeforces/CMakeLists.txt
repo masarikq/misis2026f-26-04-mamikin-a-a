@@ -1,5 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
-project(MisisTask)
+
 
 # Задания первой недели
 add_executable(0004a 0004a.cpp)
