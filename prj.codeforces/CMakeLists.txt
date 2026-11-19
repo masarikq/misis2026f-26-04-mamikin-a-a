@@ -1,6 +1,6 @@
 
 
-# Задания первой недели
+
 add_executable(0004a 0004a.cpp)
 add_executable(0263a 0263a.cpp)
 add_executable(0271a 0271a.cpp)
